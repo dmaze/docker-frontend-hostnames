@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  frontend:
+    build: ./frontend
+    ports: ['8001:80']
+  backend:
+    build: ./backend
+    ports: ['8002:5000']
+  proxy:
+    build: ./proxy
+    ports: ['8000:80']
